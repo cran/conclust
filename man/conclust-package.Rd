@@ -13,7 +13,7 @@
 The DESCRIPTION file:
 \packageDESCRIPTION{conclust}
 \packageIndices{conclust}
-There are 3 main functions in this package: ckmeans(), lcvqe() and mpckm(). They take an unlabeled dataset and two lists of must-link and cannot-link constraints as input and produce a clustering as output.
+There are 4 main functions in this package: ckmeans(), lcvqe(), mpckm() and ccls(). They take an unlabeled dataset and two lists of must-link and cannot-link constraints as input and produce a clustering as output.
 }
 \author{
 \packageAuthor{conclust}
@@ -31,6 +31,9 @@ Dan Pelleg, Dorit Baras (2007), K-means with large and noisy constraint sets
 \keyword{ lcvqe }
 \keyword{ constraint }
 \keyword{ clustering }
+\keyword{ ccls }
+\keyword{ local search }
+\keyword{ Tabu search }
 \seealso{
 Wagstaff, Cardie, Rogers, Schrodl (2001), Constrained K-means Clustering with Background Knowledge
 Bilenko, Basu, Mooney (2004), Integrating Constraints and Metric Learning in Semi-Supervised Clustering
@@ -46,5 +49,7 @@ pred
 pred = mpckm(data, k, mustLink, cantLink)
 pred
 pred = lcvqe(data, k, mustLink, cantLink)
+pred
+pred = ccls(data, k, mustLink, cantLink)
 pred
 }
